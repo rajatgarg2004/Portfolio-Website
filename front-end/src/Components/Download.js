@@ -2,7 +2,7 @@ import React from 'react';
 
 class DownloadButton extends React.Component {
   handleDownload = () => {
-    const pdfFile = '/Resume/RajatGarg-Resume.pdf';
+    const pdfFile = '/static/Resume/RajatGarg-Resume.pdf';
     const link = document.createElement('a');
     link.href = pdfFile;
     link.download = pdfFile.split('/').pop();

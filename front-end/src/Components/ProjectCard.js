@@ -1,19 +1,3 @@
-// import React from 'react';
-// export default function ProjectCard(props){
-//     let float = 'left';
-//     if(props.left==='false'){
-//         float = 'right';
-//     }
-//     return (
-//         <>
-//             <div className={`float-${float} block`}>
-//                 <h1>{props.project.name}</h1>
-//                 <button><a href={props.project.deployedUrl} target='_blank'>Deployed Link</a></button>
-//                 <button><a href={props.project.githubUrl} target='_blank'>Github Link</a></button>
-//             </div>
-//         </>
-//     );
-// };
 import React from 'react';
 
 const ProjectCard = ({ title, description, imageUrl, projectUrl,codeUrl }) => {
