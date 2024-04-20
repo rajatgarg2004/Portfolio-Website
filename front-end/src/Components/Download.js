@@ -13,7 +13,7 @@ class DownloadButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleDownload} className='p-4 bg-black text-neon-hex text-opacity-80 font-bold rounded-xl m-4'>
+      <button onClick={this.handleDownload} className='p-4 m-6 bg-black text-neon-hex text-opacity-80 font-bold rounded-xl'>
         CLICK TO DOWNLOAD RESUME
       </button>
     );

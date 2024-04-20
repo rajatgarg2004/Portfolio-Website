@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DownloadButton from './Download';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
 export default function About1() {
-    const location = useLocation();
     const initialSkills = [
         'C++',
         'Python',
@@ -59,9 +57,9 @@ export default function About1() {
     return (
         <div className='flex flex-row justify-center' id="about">
             <div className='float-left w-[90%] flex flex-col'>
-                <h1 className='text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-6 text-center'>ABOUT ME</h1>
-                <p className='text-xl md:text-2xl lg:text-3xl text-center m-4'>
-                    Here you will find more information about me, what I do, and a list of my current programming skills.
+                <h1 className='text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-6 text-center'>ABOUT ME</h1>
+                <p className='text-xl md:text-2xl lg:text-3xl text-center m-4 font-bold'>
+                    HERE YOU WILL FIND MORE INFORMATION ABOUT ME, WHAT I DO, AND A LIST OF MY CURRENT PROGRAMMING SKILLS.
                 </p>
                 <div className='flex sm:flex-col sm:justify-between sm:items-center md:flex-col md:justify-between md:items-center lg:flex-row  lg:items-start lg:justify-between p-4'>
                     <div className='sm:w-[80%] md:w-[80%] lg:w-[40%] flex flex-col items-center sm:text-center md:text-center lg:text-left'>
@@ -129,7 +127,7 @@ export default function About1() {
                                 ))}
                             </AnimatePresence>
                         </div>
-                        <span className='text-xs font-bold cursor-pointer rounded-full text-center m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] text-neon-hex ' onClick={shuffleSkills}>CLICK TO SHUFFLE</span>
+                        <span className=' self-center w-[40%] text-xs font-bold cursor-pointer rounded-full text-center m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] text-neon-hex ' onClick={shuffleSkills}>CLICK TO SHUFFLE</span>
 
                     </div>
                 </div>
