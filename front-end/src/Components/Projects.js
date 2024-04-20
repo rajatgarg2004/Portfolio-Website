@@ -13,7 +13,7 @@ export default function Projects(){
         },
         {
             title: "Musophile",
-            projectUrl : "/https://musophile.vercel.app/",
+            projectUrl : "https://musophile.vercel.app/Elite",
             imageUrl : "Musophile.png",
             description : ["Web-based App that fetches API data from Spotify.com based on the searched options of genre and playlist and displays them.",
             "Leveraged MongoDB in backend development to store user credentials and the address of songs.",
