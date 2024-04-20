@@ -2,7 +2,6 @@ import { useEffect } from "react";
 export default function Experience() {
     useEffect(() => {
         const hash = window.location.hash;
-        console.log(hash);
         if (hash === "#experience") {
           const element = document.getElementById("experience");
           if (element) {
