@@ -5,7 +5,7 @@ export default function Projects(){
         {
             title: "Economic Load Dispatch",
             projectUrl : "https://economic-load-dispatch-using-dynamicprogramming.vercel.app/",
-            imageUrl : "/Photos/EconomicLoadDispatch.png",
+            imageUrl : "/EconomicLoadDispatch.png",
             description : ["Solved the problem of Economic Load Dispatch using Dynamic Programming.",
             "Developed a data-fetching mechanism through Apps Script API to gather Excel data for load generation analysis in India which enabled the team to forecast future load patterns with precision.",
             "Meticulously utilised Chart.js to display the fetched data on the website."],
@@ -13,7 +13,7 @@ export default function Projects(){
         },
         {
             title: "Musophile",
-            projectUrl : "/Photos/https://musophile.vercel.app/",
+            projectUrl : "/https://musophile.vercel.app/",
             imageUrl : "Musophile.png",
             description : ["Web-based App that fetches API data from Spotify.com based on the searched options of genre and playlist and displays them.",
             "Leveraged MongoDB in backend development to store user credentials and the address of songs.",
@@ -23,7 +23,7 @@ export default function Projects(){
         {
             title: "E-Commerce Dashboard",
             projectUrl : "https://e-commerce-project-ashy.vercel.app/",
-            imageUrl : "/Photos/EcommerceDashboard.png",
+            imageUrl : "/EcommerceDashboard.png",
             description : ["Add, Update or Delete Product as per your wish from your input data.",
             "JWT for authentication and authorization for secure information exchange between server and user."],
             codeUrl : "https://github.com/rajatgarg2004/Musophile",

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 const Nav = () => {
     let isHome = true;
     if (window.location.pathname === '/') {
@@ -9,10 +9,9 @@ const Nav = () => {
         isHome = false;
     }
     return (
-        <div className="fixed top-5 left-0 right-0 p-4 flex justify-center z-50">
-            <div className='w-[80%] flex flex-row justify-between bg-black min-h[50px] p-2 rounded-lg'>
-                <div className='flex flex-row w-[20%] justify-between items-center float-left list-none text-neon-hex text-opacity-80'>
-                    <img src="/logo192.png" className='w-[20%] h-[100%] p-0' alt="" />
+        <div className="fixed top-5 left-0 right-0 flex justify-center z-50 ">
+            <div className='w-[80%] flex flex-row justify-between bg-black min-h[50px] p-4 rounded-lg '>
+                <div className='flex flex-row w-[30%] justify-between items-center float-left list-none text-neon-hex text-opacity-80'>
                     <li className='w-[60%] flex '><span className='lg:text-2xl md:text-xl sm:text-sm font-bold'>RAJAT GARG</span></li>
                 </div>
 
