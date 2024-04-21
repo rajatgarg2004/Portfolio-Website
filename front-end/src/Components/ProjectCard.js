@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, imageUrl, projectUrl,codeUrl }) => {
                     <h2 className="project-title">{title}</h2>
 
                     {Array.isArray(description) ? (
-                        <ul className="list-disc">
+                        <ul className="list-disc text-xs sm:text-sm md:text-xl lg:text-xl">
                             {description.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}

@@ -5,7 +5,7 @@ import Nav from './Components/Nav';
 import Details from './Components/Details';
 function App() {
     return(
-      <>
+      <div className='bg-green-rgba-lighter'>
         <Nav />
         <BrowserRouter>
           <Routes>
@@ -13,7 +13,7 @@ function App() {
             <Route path='/details' element={<Details/>}/>
           </Routes>
         </BrowserRouter>
-      </>
+      </div>
     );
 }
 

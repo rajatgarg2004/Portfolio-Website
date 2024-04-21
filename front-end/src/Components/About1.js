@@ -57,25 +57,25 @@ export default function About1() {
     return (
         <div className='flex flex-row justify-center' id="about">
             <div className='float-left w-[90%] flex flex-col'>
-                <h1 className='text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-6 text-center'>ABOUT ME</h1>
-                <p className='text-xl md:text-2xl lg:text-3xl text-center m-4 font-bold'>
+                <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-6 text-center'>ABOUT ME</h1>
+                <p className='text-xs sm:text-xl md:text-2xl lg:text-3xl text-center m-4 font-bold'>
                     HERE YOU WILL FIND MORE INFORMATION ABOUT ME, WHAT I DO, AND A LIST OF MY CURRENT PROGRAMMING SKILLS.
                 </p>
-                <div className='flex sm:flex-col sm:justify-between sm:items-center md:flex-col md:justify-between md:items-center lg:flex-row  lg:items-start lg:justify-between p-4'>
-                    <div className='sm:w-[80%] md:w-[80%] lg:w-[40%] flex flex-col items-center sm:text-center md:text-center lg:text-left'>
-                        <h2 className='text-4xl md:text-4xl md:text-center sm:text-center lg:text-5xl xl:text-6xl font-bold p-4 '>MY STORY</h2>
-                        <h3 className='text-xl'>
+                <div className='flex flex-col justify-between items-center md:flex-col md:justify-between md:items-center lg:flex-row  lg:items-start lg:justify-between p-4'>
+                    <div className='sm:w-[80%] md:w-[80%] lg:w-[40%] flex flex-col items-center text-center md:text-center lg:text-left'>
+                        <h2 className='text-2xl sm:text-2xl md:text-4xl md:text-center sm:text-center lg:text-5xl xl:text-6xl font-bold p-4 '>MY STORY</h2>
+                        <h3 className='text-xl sm:text-sm md:text-xl lg:text-2xl'>
                             Hey there, I'm Rajat, a Chandigarh native and an Electrical Engineering student at Punjab Engineering College. Beyond the structured coursework, I'm a self-taught developer, diving into the fascinating realms of coding and technology.
                         </h3>
                         <br />
-                        <h3 className='text-xl'>
+                        <h3 className='text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
                             I have various achievements and contributions in technology. Some of them are:
                         </h3>
-                        <ul className='list-disc ml-6'>
-                            <li>
+                        <ul className='list-disc ml-6 text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
+                            <li className='mb-5'>
                                 Won <b>3rd Prize</b> out of <b>40 teams</b> in the <b>Hack2Hatch Software Hackathon</b> conducted by <b>EIC, PEC</b>.
                             </li>
-                            <li>
+                            <li className='mb-5'>
                                 Achieved <b>4 Stars</b> at <b>CodeChef</b> with a remarkable rating of <b>1831</b>. Some of my Ranks are:-
                                 <ul className='list-none ml-6 '>
                                     <li>
@@ -101,22 +101,22 @@ export default function About1() {
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li className='mb-5'>
                                 Solved over <b>700 coding problems</b> on <b>LeetCode</b> and achieved a rating of <b>1649</b>.
                             </li>
-                            <li>
+                            <li className='mb-5'>
                                 Achieved a Rank of <b>48</b> in the <b>TechGig Cod-A-Thon</b>.
                             </li>
                         </ul>
                     </div>
                     <div className='sm:w-[80%] md:w-[80%] lg:w-[50%] flex flex-col justify-between'>
                         <h2 className='text-4xl md:text-4xl md:text-center sm:text-center lg:text-5xl xl:text-6xl font-bold p-4 text-center'>MY SKILLS</h2>
-                        <div className='flex flex-row flex-wrap sm:justify-center md:justify-center lg:justify-start mt-4'>
+                        <div className='flex flex-row flex-wrap justify-center md:justify-center lg:justify-start mt-4'>
                             <AnimatePresence>
                                 {skills.map((skill, index) => (
                                     <motion.span
                                         key={index}
-                                        className='sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold text-white rounded-full m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex'
+                                        className='text-sm md:text-base lg:text-lg xl:text-xl font-bold text-white rounded-full m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex'
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -50 }}

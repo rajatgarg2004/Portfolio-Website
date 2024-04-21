@@ -52,7 +52,11 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-
+  .project-title {
+    margin: 0;
+    font-size: 18px;
+    color: #333333;
+  }
 }
 @media screen and (min-width: 950px) {
   .about span {
@@ -80,6 +84,11 @@
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  .project-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333333;
   }
 }
 
@@ -110,6 +119,11 @@
     border-top-right-radius: 10px;
     object-fit: cover;
   }
+  .project-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+  }
 }
 
 .shadow-blue {
@@ -125,12 +139,6 @@
   transform: translateY(-10px);
 }
 
-
-.project-title {
-  margin: 0;
-  font-size: 24px;
-  color: #333333;
-}
 
 .project-description {
   margin-top: 10px;
