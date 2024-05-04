@@ -73,6 +73,9 @@ export default function About1() {
                         </h3>
                         <ul className='list-disc ml-6 text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
                             <li className='mb-5'>
+                                Got <b>69th Rank</b> out of <b>1000 teams</b> in <b>ZS Campus-Beats Tech Challenge</b> conducted by <b>ZS</b>.
+                            </li>
+                            <li className='mb-5'>
                                 Won <b>3rd Prize</b> out of <b>40 teams</b> in the <b>Hack2Hatch Software Hackathon</b> conducted by <b>EIC, PEC</b>.
                             </li>
                             <li className='mb-5'>
@@ -106,6 +109,9 @@ export default function About1() {
                             </li>
                             <li className='mb-5'>
                                 Achieved a Rank of <b>48</b> in the <b>TechGig Cod-A-Thon</b>.
+                            </li>
+                            <li className='mb-5'>
+                                Achieved a Rank of <b>2900</b> in <b>Google Farwell Code Jam</b>.
                             </li>
                         </ul>
                     </div>
