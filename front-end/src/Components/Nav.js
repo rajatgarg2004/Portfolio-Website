@@ -26,17 +26,17 @@ const Nav = () => {
                                     <ScrollLink to="about" spy={true} smooth={true} offset={-105} duration={500} className=' font-bold'>About</ScrollLink>
                                 </li>
                                 <li className='flex flex-row cursor-pointer mr-6'><a href="/details" className=' font-bold'>Projects</a></li>
-                                <li className='flex flex-row cursor-pointer'><a href="/details#experience" className=' font-bold'>Experience</a></li>
+                                <li className='flex flex-row cursor-pointer mr-6'><a href="/details#experience" className=' font-bold'>Experience</a></li>
                             </>) : (
                             <>
                                 <li className='flex flex-row cursor-pointer mr-6'><a href="/#about" className=' font-bold'>About</a></li>
                                 <li className='flex flex-row cursor-pointer mr-6'><a href="/details" className=' font-bold'>Projects</a></li>
-                                <li className='flex flex-row cursor-pointer'>
+                                <li className='flex flex-row cursor-pointer mr-6'>
                                     <ScrollLink to="experience" spy={true} smooth={true} offset={-105} duration={500} className=' font-bold'>Experience</ScrollLink>
                                 </li>
                             </>)
                     }
-                    <li className='flex flex-row items-center ml-6 2xl:h-[45px] xl:h-[40px] lg:h-[35px] md:h-[30px] sm:h-[28px] h-[25px] 2xl:w-[45px] xl:w-[40px] lg:w-[35px] md:w-[30px] sm:w-[28px] w-[25px]'>
+                    <li className='flex flex-row items-center 2xl:h-[45px] xl:h-[40px] lg:h-[35px] md:h-[30px] sm:h-[28px] h-[25px] 2xl:w-[45px] xl:w-[40px] lg:w-[35px] md:w-[30px] sm:w-[28px] w-[25px]'>
                         <button onClick={toggleMode} id="modeToggle" >
                             {isDarkMode ? (
                                 <img
