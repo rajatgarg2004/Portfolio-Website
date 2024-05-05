@@ -17,7 +17,6 @@ const Nav = () => {
                 <div className='flex flex-row sm:w-[30%] md:w-[30%] lg:w-[30%] w-[40%] justify-between items-center float-left list-none text-neon-hex text-opacity-80'>
                     <li className='w-[100%] flex '><span >RAJAT GARG</span></li>
                 </div>
-
                 <div className='flex width-[60%] justify-end list-none items-center text-neon-hex text-opacity-80 lg:text-2xl md:text-xl sm:text-sm'>
                     <li className='flex flex-row cursor-pointer mr-6'><a href="/" className='font-bold'>Home</a></li>
                     {
@@ -37,20 +36,19 @@ const Nav = () => {
                                 </li>
                             </>)
                     }
-                    <li className='flex flex-row items-center ml-6'>
-                        <button onClick={toggleMode} id="modeToggle">
+                    <li className='flex flex-row items-center ml-6 2xl:h-[45px] xl:h-[40px] lg:h-[35px] md:h-[30px] sm:h-[28px] h-[25px] 2xl:w-[45px] xl:w-[40px] lg:w-[35px] md:w-[30px] sm:w-[28px] w-[25px]'>
+                        <button onClick={toggleMode} id="modeToggle" >
                             {isDarkMode ? (
                                 <img
                                     src="Moon.svg"
                                     alt="Moon Icon"
-                                    style={{ width: '24px', height: '24px' }}
-
+                                    className='2xl:h-[45px] xl:h-[40px] lg:h-[35px] md:h-[30px] sm:h-[28px] h-[25px] 2xl:w-[45px] xl:w-[40px] lg:w-[35px] md:w-[30px] sm:w-[28px] w-[25px]'
                                 />
                             ) : (
                                 <img
                                     src="Sun.svg"
                                     alt="Sun Icon"
-                                    style={{ width: '24px', height: '24px' }}
+                                    className='2xl:h-[45px] xl:h-[40px] lg:h-[35px] md:h-[30px] sm:h-[28px] h-[25px] 2xl:w-[45px] xl:w-[40px] lg:w-[35px] md:w-[30px] sm:w-[28px] w-[25px]'
                                 />
                             )}
                         </button>
