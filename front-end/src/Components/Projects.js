@@ -30,7 +30,7 @@ export default function Projects({colors}){
         }
     ];
     return(
-        <div className='font-mono p-12 pt-44'>
+        <div className='font-mono p-12 pt-44 flex flex-col items-center'>
             <h1 className={`text-6xl font-bold text-center ${colors.letterColor}`}>PROJECTS</h1>
             <div className={`flex flex-row flex-wrap justify-center items-center mt-8`}>
                 {
