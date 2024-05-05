@@ -13,7 +13,8 @@ module.exports = {
         'green-rgba-darkest': 'rgba(107, 235, 180, 0.8)',
         'neon-hex':'#00FF00',
         'aqua' : '#00ffff',
-        'cool-color':'rgba(0, 0, 128, 0.9) '
+        'cool-color':'rgba(0, 0, 128, 0.9)'
+        
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'],

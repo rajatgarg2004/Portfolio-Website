@@ -1,17 +1,17 @@
 import React from 'react';
 
-const ProjectCard = ({ title, description, imageUrl, projectUrl,codeUrl }) => {
+const ProjectCard = ({ title, description, imageUrl, projectUrl,codeUrl,colors }) => {
+    console.log(colors);
     return (
-        <div className="project-card">
+        <div className={`project-card`} style={{backgroundColor:colors.cardBg}}>
             <img className="project-image" src={imageUrl} alt={title} />
             <div className='flex flex-col w-[68%] justify-between items-center'>
                 <div>
-                    <h2 className="project-title">{title}</h2>
-
+                    <h2 className={`m-[0px] text-xl ${colors.tagColor}`}>{title}</h2>
                     {Array.isArray(description) ? (
                         <ul className="list-disc text-xs sm:text-sm md:text-xl lg:text-xl">
                             {description.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li className={`${colors.textColor}`} key={index}>{item}</li>
                             ))}
                         </ul>
                     ) : (

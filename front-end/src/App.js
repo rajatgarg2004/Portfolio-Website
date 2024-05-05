@@ -6,7 +6,7 @@ import Details from './Components/Details';
 function App() {
     return(
       <div className='bg-green-rgba-lighter'>
-        <Nav />
+        <Nav/>
         <BrowserRouter>
           <Routes>
             <Route  path="/" element={<Home />}/>

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import Card from "./Card";
-export default function About() {
+export default function About({colors}) {
     const letterVariants = {
         hover: { rotate: [0, 360], transition: { duration: 0.5, ease: "easeInOut" } },
         initial: { rotate: 0 },
@@ -21,7 +21,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${colors.letterColor}`}
                         >
                             R
                         </motion.span>
@@ -31,7 +31,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             A
                         </motion.span>
@@ -41,7 +41,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.7 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             J
                         </motion.span>
@@ -51,7 +51,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             A
                         </motion.span>
@@ -61,7 +61,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.9 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
 
                             T
@@ -83,7 +83,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.1 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             G
                         </motion.span>
@@ -93,7 +93,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             A
                         </motion.span>
@@ -103,7 +103,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.3 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             R
                         </motion.span>
@@ -113,7 +113,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.4 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             G
                         </motion.span>
@@ -125,7 +125,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             S
                         </motion.span>
@@ -135,7 +135,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             O
                         </motion.span>
@@ -145,7 +145,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.7 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             F
                         </motion.span>
@@ -155,7 +155,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             T
                         </motion.span>
@@ -165,7 +165,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.9 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
 
                             W
@@ -176,7 +176,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.0 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
 
                         >
                             A
@@ -187,7 +187,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.1 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             R
                         </motion.span>
@@ -197,7 +197,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             E
                         </motion.span>
@@ -216,7 +216,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.4 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             D
                         </motion.span>
@@ -226,7 +226,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.7 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             E
                         </motion.span>
@@ -236,7 +236,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             V
                         </motion.span>
@@ -246,7 +246,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.9 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
 
                             E
@@ -257,7 +257,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.0 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
 
                         >
                             L
@@ -268,7 +268,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.1 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             O
                         </motion.span>
@@ -278,7 +278,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             P
                         </motion.span>
@@ -288,7 +288,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.7 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             E
                         </motion.span>
@@ -298,7 +298,7 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.5, rotate:0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
-                            exit="exit" className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cool-color font-bold"
+                            exit="exit" className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${colors.letterColor} font-bold`}
                         >
                             R
                         </motion.span>

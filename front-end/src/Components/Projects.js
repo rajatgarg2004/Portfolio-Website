@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-export default function Projects(){
+export default function Projects({colors}){
     const projectDetails = [
         {
             title: "Economic Load Dispatch",
@@ -30,9 +30,9 @@ export default function Projects(){
         }
     ];
     return(
-        <div className='bg-green-rgba-lighter font-mono p-12 pt-44'>
-            <h1 className='text-6xl font-bold text-center'>PROJECTS</h1>
-            <div className="flex flex-row flex-wrap justify-center items-center mt-8">
+        <div className='font-mono p-12 pt-44'>
+            <h1 className={`text-6xl font-bold text-center ${colors.letterColor}`}>PROJECTS</h1>
+            <div className={`flex flex-row flex-wrap justify-center items-center mt-8`}>
                 {
                     projectDetails.map((project, index) => (
                         <ProjectCard
@@ -42,6 +42,7 @@ export default function Projects(){
                             imageUrl={project.imageUrl}
                             projectUrl={project.projectUrl}
                             codeUrl = {project.codeUrl}
+                            colors={colors}
                         />
                     ))
                 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useDarkMode } from '../DarkModeContext';
 const Nav = () => {
     let isHome = true;
     if (window.location.pathname === '/') {
@@ -8,9 +9,11 @@ const Nav = () => {
     else {
         isHome = false;
     }
+    const { isDarkMode, toggleMode } = useDarkMode();
+
     return (
         <div className="fixed top-5 left-0 right-0 flex justify-center z-50 ">
-            <div className='w-[90%] flex flex-row justify-between bg-black min-h[50px] p-4 rounded-lg text-[0.60rem] lg:text-2xl md:text-xl sm:text-sm font-bold'>
+            <div className='w-[90%] flex flex-row justify-between bg-black min-h[50px] p-4 rounded-lg text-[0.8rem] lg:text-2xl md:text-xl sm:text-sm font-bold'>
                 <div className='flex flex-row sm:w-[30%] md:w-[30%] lg:w-[30%] w-[40%] justify-between items-center float-left list-none text-neon-hex text-opacity-80'>
                     <li className='w-[100%] flex '><span >RAJAT GARG</span></li>
                 </div>
@@ -34,7 +37,24 @@ const Nav = () => {
                                 </li>
                             </>)
                     }
+                    <li className='flex flex-row items-center ml-6'>
+                        <button onClick={toggleMode} id="modeToggle">
+                            {isDarkMode ? (
+                                <img
+                                    src="Moon.svg"
+                                    alt="Moon Icon"
+                                    style={{ width: '24px', height: '24px' }}
 
+                                />
+                            ) : (
+                                <img
+                                    src="Sun.svg"
+                                    alt="Sun Icon"
+                                    style={{ width: '24px', height: '24px' }}
+                                />
+                            )}
+                        </button>
+                    </li>
                 </div>
             </div>
         </div>

@@ -85,11 +85,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  .project-title {
-    margin: 0;
-    font-size: 20px;
-    color: #333333;
-  }
 }
 
 @media screen and (min-width: 1260px) {

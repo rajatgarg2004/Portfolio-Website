@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DownloadButton from './Download';
 import { motion, AnimatePresence } from 'framer-motion';
-export default function About1() {
+export default function About1({colors}) {
     const initialSkills = [
         'C++',
         'Python',
@@ -55,9 +55,9 @@ export default function About1() {
         }
       }, []);
     return (
-        <div className='flex flex-row justify-center' id="about">
+        <div className={`flex flex-row justify-center ${colors.tagColor}`} id="about">
             <div className='float-left w-[90%] flex flex-col'>
-                <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-6 text-center'>ABOUT ME</h1>
+                <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mt-6 text-center ${colors.letterColor}`}>ABOUT ME</h1>
                 <p className='text-xs sm:text-xl md:text-2xl lg:text-3xl text-center m-4 font-bold'>
                     HERE YOU WILL FIND MORE INFORMATION ABOUT ME, WHAT I DO, AND A LIST OF MY CURRENT PROGRAMMING SKILLS.
                 </p>
@@ -68,12 +68,12 @@ export default function About1() {
                             Hey there, I'm Rajat, a Chandigarh native and an Electrical Engineering student at Punjab Engineering College. Beyond the structured coursework, I'm a self-taught developer, diving into the fascinating realms of coding and technology.
                         </h3>
                         <br />
-                        <h3 className='text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
+                        <h3 className='text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem] m-4'>
                             I have various achievements and contributions in technology. Some of them are:
                         </h3>
                         <ul className='list-disc ml-6 text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
                             <li className='mb-5'>
-                                Got <b>69th Rank</b> out of <b>1000 teams</b> in <b>ZS Campus-Beats Tech Challenge</b> conducted by <b>ZS</b>.
+                                Got <b>69th Rank</b> out of <b>1000 teams</b> in <b>ZS Campus-Beats Tech Challenge</b>.
                             </li>
                             <li className='mb-5'>
                                 Won <b>3rd Prize</b> out of <b>40 teams</b> in the <b>Hack2Hatch Software Hackathon</b> conducted by <b>EIC, PEC</b>.
@@ -117,12 +117,12 @@ export default function About1() {
                     </div>
                     <div className='sm:w-[80%] md:w-[80%] lg:w-[50%] flex flex-col justify-between'>
                         <h2 className='text-4xl md:text-4xl md:text-center sm:text-center lg:text-5xl xl:text-6xl font-bold p-4 text-center'>MY SKILLS</h2>
-                        <div className='flex flex-row flex-wrap justify-center md:justify-center lg:justify-start mt-4'>
+                        <div className='flex flex-row flex-wrap justify-center md:justify-between lg:justify-between mt-4'>
                             <AnimatePresence>
                                 {skills.map((skill, index) => (
                                     <motion.span
                                         key={index}
-                                        className='text-sm md:text-base lg:text-lg xl:text-xl font-bold text-white rounded-full m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex'
+                                        className={`text-sm md:text-base lg:text-lg xl:text-xl font-bold ${colors.textColor} rounded-full m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex`}
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -50 }}
@@ -133,11 +133,13 @@ export default function About1() {
                                 ))}
                             </AnimatePresence>
                         </div>
-                        <span className=' self-center w-[40%] text-xs font-bold cursor-pointer rounded-full text-center m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] text-neon-hex ' onClick={shuffleSkills}>CLICK TO SHUFFLE</span>
+                        <span className={` self-center w-[40%] text-xs font-bold cursor-pointer rounded-full text-center m-2 p-4 border bg-gradient-to-br from-[#061c07] via-black to-[#061c07]  ${colors.buttonText}`} onClick={shuffleSkills}>CLICK TO SHUFFLE</span>
 
                     </div>
                 </div>
-                <DownloadButton />
+                <div className='flex flex-row justify-center '>
+                    <DownloadButton />
+                </div>
             </div>
         </div>
     );
