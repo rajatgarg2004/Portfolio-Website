@@ -10,7 +10,7 @@ export default function About({colors}) {
     return (
         <div className="flex flex-col items-center justify-center sm:flex sm:flex-row sm:items-center md:flex md:flex-row md:items-center lg:flex lg:flex-row lg:items-center p-16 pt-44 ">
             <div className=" flex flex-col float-left items-center w-[40%] h-auto">
-                <Card imageUrl="/PFP4.png" />
+                <Card imageUrl="/PFP.png" />
             </div>
 
             <div className=" flex flex-col float-right w-[60%] justify-center p-4">
