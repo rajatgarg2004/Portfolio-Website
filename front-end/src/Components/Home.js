@@ -14,6 +14,7 @@ const Home = ()=>{
 
         //For About1 Section
         colorScheme.textColor = 'text-white';
+        colorScheme.smallColor = 'text-black';
         colorScheme.tagColor = 'text-black';
         colorScheme.buttonText = 'text-neon-hex';
     }
@@ -24,6 +25,7 @@ const Home = ()=>{
         colorScheme.letterColor = "text-[#ffffff]";
         //For About1 Section
         colorScheme.textColor = 'text-[#E98354]';
+        colorScheme.smallColor = 'text-white';
         colorScheme.tagColor = 'text-[#B92AE7]';
         colorScheme.buttonText = 'text-neon-hex';
         colorScheme.footerColor = 'bg-[#737373]'

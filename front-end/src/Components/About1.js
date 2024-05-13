@@ -64,14 +64,14 @@ export default function About1({colors}) {
                 <div className='flex flex-col justify-between items-center md:flex-col md:justify-between md:items-center lg:flex-row  lg:items-start lg:justify-between p-4'>
                     <div className='sm:w-[80%] md:w-[80%] lg:w-[40%] flex flex-col items-center text-center md:text-center lg:text-left'>
                         <h2 className='text-2xl sm:text-2xl md:text-4xl md:text-center sm:text-center lg:text-5xl xl:text-6xl font-bold p-4 '>MY STORY</h2>
-                        <h3 className='text-xl sm:text-sm md:text-xl lg:text-2xl'>
+                        <h2 className={`text-xl sm:text-sm md:text-xl lg:text-2xl ${colors.smallColor}`}>
                             Hey there, I'm Rajat, a Chandigarh native and an Electrical Engineering student at Punjab Engineering College. Beyond the structured coursework, I'm a self-taught developer, diving into the fascinating realms of coding and technology.
-                        </h3>
+                        </h2>
                         <br />
-                        <h3 className='text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem] m-4'>
+                        <h3 className={`text-xs 2xl:text-xl xl:text-xl sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem] m-4 ${colors.smallColor}`}>
                             I have various achievements and contributions in technology. Some of them are:
                         </h3>
-                        <ul className='list-disc ml-6 text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem]'>
+                        <ul className={`list-disc ml-6 text-xs sm:text-[0.9rem] md:text-[1rem] lg:text-[1.05rem] xl:text-xl 3xl:text-xl ${colors.smallColor}`}>
                             <li className='mb-5'>
                                 Got <b>69th Rank</b> out of <b>1000 teams</b> in <b>ZS Campus-Beats Tech Challenge</b>.
                             </li>
@@ -122,7 +122,7 @@ export default function About1({colors}) {
                                 {skills.map((skill, index) => (
                                     <motion.span
                                         key={index}
-                                        className={`text-sm md:text-base lg:text-lg xl:text-xl font-bold ${colors.textColor} rounded-full m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex`}
+                                        className={`text-sm md:text-base lg:text-lg xl:text-xl font-bold ${colors.textColor} rounded-full 2xl:m-6 2xl:pl-5 2xl:pr-5 xl:m-6 xl:pl-5 xl:pr-5 lg:m-4 lg:p-4 md:m-3 md:p-4 m-2 p-4 bg-gradient-to-br from-[#061c07] via-black to-[#061c07] hover:text-neon-hex`}
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -50 }}
