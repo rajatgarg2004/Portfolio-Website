@@ -18,8 +18,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'],
-        // Add more font families as needed
       },
+      rotate: {
+        '-8': '-8deg',
+      }
     },
   },
   purge: [
