@@ -12,7 +12,7 @@ export default function Education({colors}) {
                             <h1 >PUNJAB ENGINEERING COLLEGE</h1>
                             <h1 >DEC 2021 - Present </h1>
                         </div>
-                        <span className="w-[40%] text-right justify-center">CGPA:- 8.42</span>
+                        <span className="w-[40%] text-right justify-center">CGPA:- 8.55</span>
                     </li>
                 </ul>
                 <ul className='list-none m-6'>

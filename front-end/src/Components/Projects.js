@@ -3,13 +3,22 @@ import ProjectCard from './ProjectCard';
 export default function Projects({colors}){
     const projectDetails = [
         {
+            title: "TalkTime",
+            projectUrl : "https://talktime-erub.onrender.com/",
+            imageUrl : "/TalkTime.png",
+            description : ["Developed RESTful APIs for user authentication and registration, as well as for creating, liking, and commenting on posts, ensuring secure access through robust authentication and authorization mechanisms.",
+                "Implemented real-time messaging features utilizing the Socket.IO library within a Node.js environment.",
+                "Integrated the backend with the frontend using Fetch API calls, managing application state with Recoil for efficient data handling and user experience."],
+            codeUrl : "https://github.com/rajatgarg2004/Musophile",
+        },
+        {
             title: "Economic Load Dispatch",
             projectUrl : "https://economic-load-dispatch-using-dynamicprogramming.vercel.app/",
             imageUrl : "/EconomicLoadDispatch.png",
             description : ["Solved the problem of Economic Load Dispatch using Dynamic Programming.",
             "Developed a data-fetching mechanism through Apps Script API to gather Excel data for load generation analysis in India which enabled the team to forecast future load patterns with precision.",
             "Meticulously utilised Chart.js to display the fetched data on the website."],
-            codeUrl : "https://github.com/rajatgarg2004/Minor-Project"
+            codeUrl : "https://github.com/rajatgarg2004/TalkTime"
         },
         {
             title: "Musophile",
@@ -28,6 +37,7 @@ export default function Projects({colors}){
             "JWT for authentication and authorization for secure information exchange between server and user."],
             codeUrl : "https://github.com/rajatgarg2004/Musophile",
         }
+        
     ];
     return(
         <div className='font-mono p-12 pt-44 flex flex-col items-center'>

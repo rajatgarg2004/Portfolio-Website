@@ -105,7 +105,10 @@ export default function About1({colors}) {
                                 </ul>
                             </li>
                             <li className='mb-5'>
-                                Solved over <b>700 coding problems</b> on <b>LeetCode</b> and achieved a rating of <b>1649</b>.
+                                Solved over <b>900 coding problems</b> on <b>LeetCode</b> and achieved a rating of <b>1649</b>.
+                            </li>
+                            <li className='mb-5'>
+                                Qualified for <b>Airbus Aerothon 6.0</b> out of <b>20000 participants</b>.
                             </li>
                             <li className='mb-5'>
                                 Achieved a Rank of <b>48</b> in the <b>TechGig Cod-A-Thon</b>.

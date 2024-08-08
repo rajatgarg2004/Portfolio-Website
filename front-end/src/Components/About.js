@@ -8,7 +8,7 @@ export default function About({colors}) {
         exit: { rotate: 0 }
     };
     return (
-        <div className="flex flex-col items-center justify-center sm:flex sm:flex-col sm:items-center md:flex md:flex-row md:items-center lg:flex lg:flex-row lg:items-center p-16 pt-44 ">
+        <div className="flex flex-col items-center justify-center sm:flex sm:flex-col sm:items-center md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:items-center p-16 pt-44 ">
             <div className=" flex flex-col float-left items-center p-5 w-[85%] md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%] h-auto">
                 <Card imageUrl="/PFP.png" />
             </div>

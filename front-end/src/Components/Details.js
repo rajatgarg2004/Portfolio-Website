@@ -1,7 +1,5 @@
 import {useState} from 'react';
 import Projects from "./Projects";
-import Experience from "./Experience";
-import Education from "./Education";
 import Footer from "./Footer";
 import { useDarkMode } from '../DarkModeContext';
 export default function Details(){
@@ -35,12 +33,6 @@ export default function Details(){
         <>
             <div className={`${colorScheme.bgColor1} font-mono p-6`}>
                 <Projects colors={colorScheme}/>
-            </div>
-            <div className={`${colorScheme.bgColor2} font-mono`}>
-                <Experience colors={colorScheme}/>
-            </div>
-            <div className={`${colorScheme.bgColor1} font-mono`}>
-                <Education colors = {colorScheme}/>
             </div>
             <Footer footerColor={`${colorScheme.footerColor}`}/>
         </>

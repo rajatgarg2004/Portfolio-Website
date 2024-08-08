@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-export default function Experience({colors}) {
+export default function Experience({ colors }) {
     useEffect(() => {
         const hash = window.location.hash;
         if (hash === "#experience") {
-          const element = document.getElementById("experience");
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
+            const element = document.getElementById("experience");
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     }, []);
     return (
@@ -18,7 +18,7 @@ export default function Experience({colors}) {
                         SOFTWARE DEVELOPMENT INTERN
                     </li>
                     <li className={`text-sm md:text-xl lg:text-2xl font-bold ${colors.tagColor}`}>
-                        Jan 2024 - Present / DGRE, DRDO
+                        Jan 2024 - Apr 2024 / DGRE, DRDO
                     </li>
                     <ul className={`list-disc mt-5 ml-6 text-sm md:text-xl lg:text-xl ${colors.textColor}`}>
                         <li>
@@ -29,6 +29,9 @@ export default function Experience({colors}) {
                         </li>
                         <li>
                             Leveraged Cesium.js for rendering geographic data and MySQL to store Avalanche details.
+                        </li>
+                        <li>
+                            Developed an LSTM Model for short term and Hyperlocal cloud forecasting.
                         </li>
                     </ul>
                 </ul>
